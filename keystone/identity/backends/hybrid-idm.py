@@ -19,7 +19,7 @@ LDAP_USER_OBJECT_CLASS = CONF.ldap.user_objectclass
 LDAP_USER_ID_ATTRIBUTE = CONF.ldap.user_id_attribute
 LDAP_USER_TREE_DN = CONF.ldap.user_tree_dn
 LDAP_GENERIC_TREE_DN = CONF.ldap.generic_tree_dn
-LDAP_BUILTIN_USERS = CONF.ldap.builtin_users
+LDAP_BUILTIN_USERS = CONF.ldap.builtin_users.split(',')
 
 LOG = logging.getLogger(__name__)
 
