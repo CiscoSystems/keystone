@@ -5,14 +5,12 @@ from keystone import identity
 from keystone.identity.backends import sql
 from keystone.identity.backends import ldap
 from keystone.openstack.common import log as logging
-from oslo.config import cfg
-from keystone import config as ks_cfg
+from keystone import config
 from keystone.common.ldap import core
 import uuid
 import re
 
-CONF = ks_cfg.CONF
-ks_cfg.CONF.register_opt(cfg.ListOpt('builtin_users'), group='ldap')
+CONF = config.CONF
 
 DEFAULT_DOMAIN_ID = CONF.identity.default_domain_id
 LDAP_BIND_USER = CONF.ldap.user
