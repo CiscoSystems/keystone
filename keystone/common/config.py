@@ -243,8 +243,7 @@ FILE_OPTIONS = {
         # (schoksey): start - New attributes added for Generic DN,user attribute suffix,built-in users list
         cfg.StrOpt('user_suffix', default=None),
         cfg.StrOpt('generic_tree_dn', default=None),
-        cfg.StrOpt('builtin_users', default=[])],
-
+        cfg.ListOpt('builtin_users', default=[])],
     'pam': [
         cfg.StrOpt('userid', default=None),
         cfg.StrOpt('password', default=None)],
